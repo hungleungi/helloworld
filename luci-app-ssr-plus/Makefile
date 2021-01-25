@@ -41,7 +41,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_V2ray
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_Trojan-go
 	bool "Include Trojan-go"
-	default y if i386||x86_64||arm||aarch64
+	default n if i386||x86_64||arm||aarch64
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_Kcptun
 	bool "Include Kcptun"
