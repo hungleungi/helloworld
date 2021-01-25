@@ -49,7 +49,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_Kcptun
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_ShadowsocksR_Server
 	bool "Include ShadowsocksR Server"
-	default y if i386||x86_64||arm||aarch64
+	default n if i386||x86_64||arm||aarch64
 endef
 
 LUCI_TITLE:=SS/SSR/V2Ray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
